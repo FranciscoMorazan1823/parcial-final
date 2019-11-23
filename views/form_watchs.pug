@@ -1,0 +1,53 @@
+form#form-principal    
+    .field.is-horizontal
+        .field-label.is-normal.is-small
+            label.label(for="Banda") Banda:
+        .field-body
+            .field.has-addons
+                .control.is-expanded
+                    .select.is-fullwidth.is-small
+                        select#opciones-modelos(name="Banda")
+            .field-label.is-normal.is-small
+                label.label(for="Genero") Genero:
+            .field.has-addons
+                .control.is-expanded
+                    .select.is-fullwidth.is-small
+                        select#opciones-marcas(name="Genero")
+    .field.is-horizontal
+        .field-label.is-normal.is-small
+            label.label(for="Vocalista") Vocalista:
+        .field-body
+            .field.has-addons
+                .control.is-expanded
+                    .select.is-fullwidth.is-small
+                        select#opciones-tipos(name="Vocalista")
+            .field-label.is-normal.is-small
+                label.label.is-small(for="Precio") Banda:
+            .field.has-addons
+                p.control.is-expanded
+                    input#name.input.is-small.is-rounded.is-primary(type='text', placeholder='Nombre Unico' name='name')
+            .field-label.is-normal.is-small
+                label.label.is-small(for="Precio") Precio:
+            .field.has-addons
+                p.control.is-expanded
+                    input#precio.input.is-small.is-rounded.is-primary(type='text', placeholder='$$$' name='precio')
+        
+    .field.is-horizontal
+        .field-label
+        .field-body
+            .field.is-grouped
+                .control       
+                    button#btn-principal.button.is-small.is-success.is-primary Crear
+                .control       
+                    button#btn-actualizar.button.is-small.is-hidden Actualizar
+            
+                .control  
+                    button#btn-limpiar.button.is-small.is-danger Limpiar
+                .control
+                    label.radio
+                        input#asc.button.is-small(type='button' name='answer' value="Ascendente")
+                
+                    label.radio
+                        input#des.button.is-small(type='button' name='answer' value="Descendente")
+                       
+

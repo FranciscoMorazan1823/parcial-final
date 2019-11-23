@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    section.section
+        .container
+            include form_watchs
+
+        
+    section.section
+        .container
+            include table_watchs
+            
+block scripts
+    script(src="javascripts/main.js")
+    script(src="https://cdn.jsdelivr.net/npm/sweetalert2@9")
